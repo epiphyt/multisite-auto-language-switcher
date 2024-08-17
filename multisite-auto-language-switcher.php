@@ -11,6 +11,7 @@ License:		GPL2
 License URI:	https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:	multisite-auto-language-switcher
 Domain Path:	/languages
+Requires Plugins:	multisite-language-switcher
 
 Multisite Auto Language Switcher is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
