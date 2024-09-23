@@ -1,16 +1,17 @@
 <?php
+declare(strict_types = 1);
+
 namespace epiphyt\Multisite_Auto_Language_Switcher;
 
 /*
-Plugin Name:	Multisite Auto Language Switcher
-Description:	Automatically switch to a user's preferred language if Multisite Language Switcher is enabled and active for the current page.
-Author:			Epiphyt
-Author URI:		https://epiph.yt/en/
-Version:		1.0.0-dev
-License:		GPL2
-License URI:	https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain:	multisite-auto-language-switcher
-Domain Path:	/languages
+Plugin Name:		Multisite Auto Language Switcher
+Description:		Automatically switch to a user's preferred language if Multisite Language Switcher is enabled and active for the current page.
+Author:				Epiphyt
+Author URI:			https://epiph.yt/en/
+Version:			1.0.0
+License:			GPL2
+License URI:		https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:		multisite-auto-language-switcher
 Requires Plugins:	multisite-language-switcher
 
 Multisite Auto Language Switcher is free software: you can redistribute it and/or modify
@@ -28,7 +29,7 @@ along with Multisite Auto Language Switcher. If not, see https://www.gnu.org/lic
 */
 \defined( 'ABSPATH' ) || exit;
 
-\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_VERSION', '1.0.0-dev' );
+\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_VERSION', '1.0.0' );
 
 if ( ! \defined( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE' ) ) {
 	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE', \WP_PLUGIN_DIR . '/multisite-auto-language-switcher/' );

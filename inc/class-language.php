@@ -1,4 +1,6 @@
 <?php
+declare(strict_types = 1);
+
 namespace epiphyt\Multisite_Auto_Language_Switcher;
 
 /**
