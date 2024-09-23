@@ -18,6 +18,11 @@ final class Language {
 	 */
 	public static function get_accepted(): array {
 		$http_accept_language = \sanitize_text_field( \wp_unslash( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '' ) );
+		
+		if ( empty( $http_accept_language ) ) {
+			return [];
+		}
+		
 		$languages = \explode( ',', $http_accept_language );
 		$languages = \array_map( static function( string $language ): array {
 			$list = \explode( ';', $language );
