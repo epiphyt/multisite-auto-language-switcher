@@ -108,7 +108,11 @@ final class Switcher {
 			$current_permalink = \get_permalink();
 			$permalink = self::get_permalink( $locale );
 			
-			if ( ! empty( $permalink ) && $permalink !== self::add_redirected_parameter( $current_permalink ) ) {
+			if (
+				! empty( $permalink )
+				&& $current_permalink !== false
+				&& $permalink !== self::add_redirected_parameter( $current_permalink )
+			) {
 				\wp_safe_redirect( $permalink );
 				exit;
 			}
