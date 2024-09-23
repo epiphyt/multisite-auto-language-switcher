@@ -29,6 +29,10 @@ Multisite Auto Language Switcher is a handy extensions for [Multisite Language S
 
 Multisite Auto Language Switcher uses a cookie to prevent redirect loops between languages. In GDPR terms, it’s a required cookie to provide the functionality of redirecting a user to its preferred language. It is only stored for the current session and doesn’t contain any private data.
 
+= Where are the settings? =
+
+Currently, there are no settings and Multisite Auto Language Switcher automatically redirects anyone to their preferred language defined in their browser as soon as [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/) has been configured properly.
+
 = Who are you, folks? =
 
 We are [Epiphyt](https://epiph.yt/), your friendly neighborhood WordPress plugin shop from southern Germany.
