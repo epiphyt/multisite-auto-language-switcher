@@ -94,6 +94,12 @@ final class Switcher {
 			return;
 		}
 		
+		$current_permalink = \get_permalink();
+		
+		if ( $current_permalink === false ) {
+			return;
+		}
+		
 		foreach ( $accept_languages as $accept_language ) {
 			if ( $accept_language['language'] === '*' ) {
 				return;
@@ -105,17 +111,19 @@ final class Switcher {
 				continue;
 			}
 			
-			$current_permalink = \get_permalink();
 			$permalink = self::get_permalink( $locale );
 			
-			if (
-				! empty( $permalink )
-				&& $current_permalink !== false
-				&& $permalink !== self::add_redirected_parameter( $current_permalink )
-			) {
+			if ( empty( $permalink ) ) {
+				continue;
+			}
+			
+			if ( $permalink !== self::add_redirected_parameter( $current_permalink ) ) {
 				\wp_safe_redirect( $permalink );
 				exit;
 			}
+			
+			// a valid permalink exists and is identical to the current URL
+			break;
 		}
 	}
 	
