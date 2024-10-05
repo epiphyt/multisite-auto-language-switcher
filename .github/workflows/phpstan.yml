@@ -1,6 +1,6 @@
 name: PHPStan
 
-on: [workflow_call]
+on: [push, workflow_call]
 
 jobs:
   test-phpstan:
