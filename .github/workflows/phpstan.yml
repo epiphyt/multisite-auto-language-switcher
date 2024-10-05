@@ -1,0 +1,20 @@
+name: PHPStan
+
+on: [workflow_call]
+
+jobs:
+  test-phpstan:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install composer dependencies
+        uses: php-actions/composer@v6
+      - name: PHPStan static analysis
+        uses: php-actions/phpstan@v3
+        with:
+          args: -v
+          configuration: phpstan.neon.dist
+          memory_limit: 2G
+          path: inc/ multisite-auto-language-switcher.php
+          php_version: 7.4

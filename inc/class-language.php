@@ -74,8 +74,8 @@ final class Language {
 	/**
 	 * Sort two given languages by their weight as callback.
 	 * 
-	 * @param	array	$language1 First language
-	 * @param	array	$language2 Second language
+	 * @param	string[]	$language1 First language
+	 * @param	string[]	$language2 Second language
 	 * @return	int Order of the languages
 	 */
 	private static function sort_by_priority_callback( array $language1, array $language2 ): int {

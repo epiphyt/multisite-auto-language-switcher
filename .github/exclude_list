@@ -1,8 +1,12 @@
 node_modules/
 src/
+composer.json
+composer.lock
 package.json
 package-lock.json
 ruleset.xml
 webpack.config.js
 *scss/
 .git*
+phpstan.neon.dist
+.phpcs.xml

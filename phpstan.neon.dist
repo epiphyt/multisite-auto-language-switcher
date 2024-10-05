@@ -1,0 +1,7 @@
+parameters:
+  level: 9
+  paths:
+    - multisite-auto-language-switcher.php
+    - inc/
+  scanDirectories:
+    - vendor/php-stubs
