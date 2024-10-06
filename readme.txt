@@ -14,7 +14,7 @@ Automatically switch to a user's preferred language if Multisite Language Switch
 
 Multisite Auto Language Switcher is a handy extensions for [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/), which adds an automatic redirect to the preferred language of a user. To do so, it uses the preferred language the user has defined in its browser, which it automatically transmits on every request, to determine a matching language within your website. If a match could be found, it automatically redirects the user to this variant of the content.
 
-**Note: This plugins requires the plugin [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/).**
+**Note: This plugin requires the plugin [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/).**
 
 
 == Installation ==
@@ -36,6 +36,10 @@ Currently, there are no settings and Multisite Auto Language Switcher automatica
 = Who are you, folks? =
 
 We are [Epiphyt](https://epiph.yt/), your friendly neighborhood WordPress plugin shop from southern Germany.
+
+= How can I report security bugs? =
+
+You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team help validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/multisite-auto-language-switcher)
 
 
 == Changelog ==
