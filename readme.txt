@@ -2,8 +2,8 @@
 Contributors: epiphyt, kittmedia
 Tags: multisite, switcher language, preferred, automatic
 Requires at least: 6.1
-Stable tag: 1.0.0
-Tested up to: 6.6
+Stable tag: 1.0.1
+Tested up to: 6.7
 Requires PHP: 7.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,10 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 
 == Changelog ==
+
+= 1.0.1 =
+* Fixed: Unwanted redirects for certain pages
+* Fixed: Redirecting again after explicitly clicking on a language in the language switcher
 
 = 1.0.0 =
 * Initial release
