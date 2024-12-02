@@ -3,6 +3,8 @@ declare(strict_types = 1);
 
 namespace epiphyt\Multisite_Auto_Language_Switcher;
 
+use lloc\Msls\MslsLink;
+
 /**
  * Switcher functionality.
  * 
@@ -18,6 +20,7 @@ final class Switcher {
 		\add_action( 'init', [ self::class, 'set_cookie' ] );
 		\add_action( 'wp', [ self::class, 'maybe_redirect' ] );
 		\add_filter( 'msls_options_get_permalink', [ self::class, 'add_redirected_parameter' ] );
+		\add_filter( 'msls_output_get', [ self::class, 'set_language_switcher_link' ], 10, 3 );
 	}
 	
 	/**
@@ -164,5 +167,19 @@ final class Switcher {
 		);
 		
 		\setcookie( $parameter_name, '1', $cookie_options );
+	}
+	
+	/**
+	 * Set language switcher link.
+	 * 
+	 * @param	string				$url Current URL
+	 * @param	\lloc\Msls\MslsLink	$link Multisite Language Switcher link object
+	 * @param	bool				$is_current_blog Whether it's the current blog
+	 * @return	string Updated URL
+	 */
+	public static function set_language_switcher_link( string $url, MslsLink $link, bool $is_current_blog ): string {
+		$url = self::add_redirected_parameter( $url );
+		
+		return \sprintf( '<a href="%1$s" title="%2$s"%3$s>%4$s</a>', $url, $link->txt, $is_current_blog ? ' class="current_language"' : '', $link );
 	}
 }
