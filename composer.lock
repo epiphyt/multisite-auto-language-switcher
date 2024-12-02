@@ -4,9 +4,32 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5725161a3c422f33c07f06b04f7db9c0",
+    "content-hash": "b1e791e28651d1fd51e2820d533a2336",
     "packages": [],
     "packages-dev": [
+        {
+            "name": "epiphyt/multisite-language-switcher-stubs",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/epiphyt/multisite-language-switcher-stubs.git",
+                "reference": "3c98757aedc1d5bcbf885c306e906872e5bf1ef4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/epiphyt/multisite-language-switcher-stubs/zipball/3c98757aedc1d5bcbf885c306e906872e5bf1ef4",
+                "reference": "3c98757aedc1d5bcbf885c306e906872e5bf1ef4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "description": "Multisite Language Switcher function and class declaration stubs for static analysis by PHPStan",
+            "support": {
+                "source": "https://github.com/epiphyt/multisite-language-switcher-stubs/tree/main",
+                "issues": "https://github.com/epiphyt/multisite-language-switcher-stubs/issues"
+            },
+            "time": "2024-12-02T10:43:03+00:00"
+        },
         {
             "name": "php-stubs/wordpress-stubs",
             "version": "v6.6.2",
@@ -401,7 +424,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "epiphyt/multisite-language-switcher-stubs": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

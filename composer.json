@@ -2,12 +2,19 @@
     "scripts": {
       "phpstan": "phpstan analyse -v --memory-limit=2048M"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:epiphyt/multisite-language-switcher-stubs.git"
+        }
+    ],
     "require-dev": {
         "phpstan/phpstan": "^1.12",
         "szepeviktor/phpstan-wordpress": "^1.3",
         "phpstan/extension-installer": "^1.4",
         "swissspidy/phpstan-no-private": "^0.2.1",
-        "phpstan/phpstan-deprecation-rules": "^1.2"
+        "phpstan/phpstan-deprecation-rules": "^1.2",
+        "epiphyt/multisite-language-switcher-stubs": "dev-main"
     },
     "config": {
         "allow-plugins": {

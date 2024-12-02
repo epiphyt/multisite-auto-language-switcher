@@ -5,3 +5,4 @@ parameters:
     - inc/
   scanDirectories:
     - vendor/php-stubs
+    - vendor/epiphyt
