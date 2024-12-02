@@ -75,7 +75,18 @@ final class Switcher {
 	 * Maybe redirect a user to another language.
 	 */
 	public static function maybe_redirect(): void {
-		if ( \is_admin() || \wp_doing_ajax() || \wp_doing_cron() ) {
+		if (
+			\is_admin()
+			|| \is_archive()
+			|| \is_author()
+			|| \is_comment_feed()
+			|| \is_feed()
+			|| \is_preview()
+			|| \is_search()
+			|| \is_trackback()
+			|| \wp_doing_ajax()
+			|| \wp_doing_cron()
+			) {
 			return;
 		}
 		
@@ -94,7 +105,7 @@ final class Switcher {
 			return;
 		}
 		
-		$current_permalink = \get_permalink();
+		$current_permalink = \get_permalink( \get_queried_object_id() );
 		
 		if ( $current_permalink === false ) {
 			return;
