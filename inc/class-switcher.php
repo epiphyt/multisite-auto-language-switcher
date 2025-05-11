@@ -89,7 +89,11 @@ final class Switcher {
 			|| \is_trackback()
 			|| \wp_doing_ajax()
 			|| \wp_doing_cron()
-			) {
+		) {
+			return;
+		}
+		
+		if ( \get_user_option( 'multisite_auto_language_switcher_redirect', \get_current_user_id() ) ) {
 			return;
 		}
 		

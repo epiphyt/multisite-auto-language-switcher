@@ -17,5 +17,6 @@ final class Plugin {
 	public static function init(): void {
 		Frontend::init();
 		Switcher::init();
+		User_Options::init();
 	}
 }
