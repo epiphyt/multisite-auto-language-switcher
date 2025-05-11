@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="Advanced Set">
+	<rule ref="EpiphytCodingStandard"/>
+	
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_supported_wp_version" value="6.1"/>
+	
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array" value="multisite-auto-language-switcher"/>
+		</properties>
+	</rule>
+	
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="plugin_boilerplate"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>
