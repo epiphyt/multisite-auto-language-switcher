@@ -31,7 +31,7 @@ Multisite Auto Language Switcher uses a cookie to prevent redirect loops between
 
 = Where are the settings? =
 
-Currently, there are no settings and Multisite Auto Language Switcher automatically redirects anyone to their preferred language defined in their browser as soon as [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/) has been configured properly.
+Logged-in users can define in their profile whether they want to disable being auto-redirected between languages.
 
 = Who are you, folks? =
 
