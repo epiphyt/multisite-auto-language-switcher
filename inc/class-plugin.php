@@ -15,6 +15,7 @@ final class Plugin {
 	 * Initialize functions.
 	 */
 	public static function init(): void {
+		Frontend::init();
 		Switcher::init();
 	}
 }

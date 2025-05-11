@@ -1,0 +1,7 @@
+<script id="multisite-language-auto-switcher-inline-script-remove-parameter">
+	const url = new URL( window.location.href );
+	const parameters = new URLSearchParams( url.search );
+	parameters.delete( multisiteAutoLanguageSwitcherParameterName );
+	url.search = parameters;
+	window.history.replaceState( null, '', url.toString() );
+</script>
