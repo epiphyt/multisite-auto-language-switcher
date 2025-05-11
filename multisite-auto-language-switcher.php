@@ -31,17 +31,18 @@ along with Multisite Auto Language Switcher. If not, see https://www.gnu.org/lic
 
 \define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_VERSION', '1.0.1' );
 
-if ( ! \defined( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE' ) ) {
+if ( \file_exists( \WP_PLUGIN_DIR . '/multisite-auto-language-switcher/' ) ) {
 	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE', \WP_PLUGIN_DIR . '/multisite-auto-language-switcher/' );
 }
-
-if ( ! \defined( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE' ) ) {
-	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE', \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE . \basename( __FILE__ ) );
+else if ( \file_exists( \WPMU_PLUGIN_DIR . '/multisite-auto-language-switcher/' ) ) {
+	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE', \WPMU_PLUGIN_DIR . '/multisite-auto-language-switcher/' );
+}
+else {
+	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE', \plugin_dir_path( __FILE__ ) );
 }
 
-if ( ! \defined( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_URL' ) ) {
-	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_URL', \plugin_dir_url( \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE ) );
-}
+\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE', \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE . \basename( __FILE__ ) );
+\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_URL', \plugin_dir_url( \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE ) );
 
 /**
  * Autoload all necessary classes.
