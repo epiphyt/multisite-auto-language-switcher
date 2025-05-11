@@ -14,7 +14,7 @@
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<property name="prefixes" type="array">
-				<element value="plugin_boilerplate"/>
+				<element value="multisite_auto_language_switcher"/>
 			</property>
 		</properties>
 	</rule>
