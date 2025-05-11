@@ -93,7 +93,7 @@ final class Switcher {
 			return;
 		}
 		
-		if ( \get_user_option( 'multisite_auto_language_switcher_redirect', \get_current_user_id() ) ) {
+		if ( \get_user_option( 'multisite_auto_language_switcher_disable_redirect', \get_current_user_id() ) ) {
 			return;
 		}
 		

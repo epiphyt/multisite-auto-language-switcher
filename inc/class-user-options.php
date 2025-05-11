@@ -32,9 +32,9 @@ final class User_Options {
 		<tr class="user-multisite-auto-language-switcher-redirect-wrap">
 			<th scope="row"><?php \esc_html_e( 'Auto-redirect', 'multisite-auto-language-switcher' ); ?></th>
 			<td>
-				<label for="multisite_auto_language_switcher_redirect">
-					<input name="multisite_auto_language_switcher_redirect" type="checkbox" id="multisite_auto_language_switcher_redirect" value="1"<?php \checked( \get_user_option( 'multisite_auto_language_switcher_redirect', $user->ID ) ); ?>>
-					<?php \esc_html_e( 'Auto-redirect to preferred language', 'multisite-auto-language-switcher' ); ?>
+				<label for="multisite_auto_language_switcher_disable_redirect">
+					<input name="multisite_auto_language_switcher_disable_redirect" type="checkbox" id="multisite_auto_language_switcher_disable_redirect" value="1"<?php \checked( \get_user_option( 'multisite_auto_language_switcher_disable_redirect', $user->ID ) ); ?>>
+					<?php \esc_html_e( 'Disable auto-redirect to preferred language', 'multisite-auto-language-switcher' ); ?>
 				</label>
 			</td>
 		</tr>
@@ -58,13 +58,13 @@ final class User_Options {
 			return;
 		}
 		
-		if ( isset( $_POST['multisite_auto_language_switcher_redirect'] ) ) {
-			$data = (bool) \sanitize_text_field( \wp_unslash( $_POST['multisite_auto_language_switcher_redirect'] ) );
+		if ( isset( $_POST['multisite_auto_language_switcher_disable_redirect'] ) ) {
+			$data = (bool) \sanitize_text_field( \wp_unslash( $_POST['multisite_auto_language_switcher_disable_redirect'] ) );
 			
-			\update_user_option( $user_id, 'multisite_auto_language_switcher_redirect', $data, true );
+			\update_user_option( $user_id, 'multisite_auto_language_switcher_disable_redirect', $data, true );
 		}
 		else {
-			\delete_user_option( $user_id, 'multisite_auto_language_switcher_redirect', true );
+			\delete_user_option( $user_id, 'multisite_auto_language_switcher_disable_redirect', true );
 		}
 	}
 }
