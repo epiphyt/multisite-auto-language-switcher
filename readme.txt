@@ -35,7 +35,7 @@ Logged-in users can define in their profile whether they want to disable being a
 
 = Who are you, folks? =
 
-We are [Epiphyt](https://epiph.yt/), your friendly neighborhood WordPress plugin shop from southern Germany.
+We are [Epiphyt](https://epiph.yt/en/), your friendly neighborhood WordPress plugin shop from southern Germany.
 
 = How can I report security bugs? =
 
