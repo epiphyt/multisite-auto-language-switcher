@@ -1,3 +1,15 @@
+.distignore
+.git
+.github
+.wordpress-org
+node_modules/
+src/
+package.json
+package-lock.json
+ruleset.xml
+webpack.config.js
+*scss/
+.phpcs.xml
 composer.json
 composer.lock
 phpstan.neon.dist
