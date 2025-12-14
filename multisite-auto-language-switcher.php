@@ -8,7 +8,7 @@ Plugin Name:		Multisite Auto Language Switcher
 Description:		Automatically switch to a user's preferred language if Multisite Language Switcher is enabled and active for the current page.
 Author:				Epiphyt
 Author URI:			https://epiph.yt/en/
-Version:			1.1.0
+Version:			1.1.1
 License:			GPL2
 License URI:		https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:		multisite-auto-language-switcher
@@ -29,7 +29,7 @@ along with Multisite Auto Language Switcher. If not, see https://www.gnu.org/lic
 */
 \defined( 'ABSPATH' ) || exit;
 
-\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_VERSION', '1.1.0' );
+\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_VERSION', '1.1.1' );
 
 if ( \file_exists( \WP_PLUGIN_DIR . '/multisite-auto-language-switcher/' ) ) {
 	\define( 'EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_BASE', \WP_PLUGIN_DIR . '/multisite-auto-language-switcher/' );
@@ -53,6 +53,11 @@ else {
 	$namespace = \strtolower( __NAMESPACE__ . '\\' );
 	$path = \explode( '\\', $class_name );
 	$filename = \str_replace( '_', '-', \strtolower( \array_pop( $path ) ) );
+	
+	if ( \strpos( $class_name, __NAMESPACE__ ) !== 0 ) {
+		return;
+	}
+	
 	$class_name = \str_replace(
 		[ $namespace, '\\', '_' ],
 		[ '', '/', '-' ],

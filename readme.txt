@@ -2,8 +2,8 @@
 Contributors: epiphyt, kittmedia
 Tags: multisite, switcher language, preferred, automatic
 Requires at least: 6.1
-Stable tag: 1.1.0
-Tested up to: 6.8
+Stable tag: 1.1.1
+Tested up to: 6.9
 Requires PHP: 7.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -43,6 +43,9 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 
 == Changelog ==
+
+= 1.1.1 =
+* Updated: Compatibility with the latest releases of Multisite Language Switcher
 
 = 1.1.0 =
 * Added: User option to disable redirect via profile settings

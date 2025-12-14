@@ -61,11 +61,11 @@ final class Switcher {
 	 * @return	string Permalink to redirect to
 	 */
 	private static function get_permalink( string $locale ): string {
-		if ( ! \function_exists( 'get_msls_permalink' ) ) {
+		if ( ! \function_exists( 'msls_get_permalink' ) ) {
 			return '';
 		}
 		
-		$permalink = \get_msls_permalink( $locale );
+		$permalink = \msls_get_permalink( $locale );
 		
 		if ( empty( $permalink ) ) {
 			return '';
