@@ -2,8 +2,8 @@
 Contributors: epiphyt, kittmedia
 Tags: multisite, switcher language, preferred, automatic
 Requires at least: 6.1
-Stable tag: 1.1.1
-Tested up to: 6.9
+Stable tag: 1.1.2
+Tested up to: 7.0
 Requires PHP: 7.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,9 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 == Changelog ==
 
+= 1.1.2 =
+* Added: Compatibility with WordPress 7.0
+
 = 1.1.1 =
 * Updated: Compatibility with the latest releases of Multisite Language Switcher
 
@@ -57,9 +60,3 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 
 = 1.0.0 =
 * Initial release
-
-
-== Upgrade Notice ==
-
-
-== Screenshots ==
