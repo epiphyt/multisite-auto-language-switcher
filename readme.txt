@@ -16,6 +16,14 @@ Multisite Auto Language Switcher is a handy extensions for [Multisite Language S
 
 **Note: This plugin requires the plugin [Multisite Language Switcher](https://wordpress.org/plugins/multisite-language-switcher/).**
 
+= Contribution =
+
+Feel free to contribute. The code is available at [GitHub](https://github.com/epiphyt/multisite-auto-language-switcher).
+
+= Documentation =
+
+You can find the documentation for Multisite Auto Language Switcher at [docs.epiph.yt](https://docs.epiph.yt/multisite-auto-language-switcher/).
+
 
 == Installation ==
 
