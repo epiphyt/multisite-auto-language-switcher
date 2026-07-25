@@ -14,7 +14,7 @@ final class Language {
 	/**
 	 * Get a list of accepted languages, sorted by their weight.
 	 * 
-	 * @return	string[][]	List of accepted languages
+	 * @return	string[][] List of accepted languages
 	 */
 	public static function get_accepted(): array {
 		$http_accept_language = \sanitize_text_field( \wp_unslash( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '' ) );

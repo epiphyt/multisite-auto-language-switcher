@@ -21,8 +21,8 @@ final class Admin {
 	/**
 	 * Add plugin meta links.
 	 * 
-	 * @param	string[]	$input Registered links.
-	 * @param	string		$file  Current plugin file.
+	 * @param	string[]	$input Registered links
+	 * @param	string		$file Current plugin file
 	 * @return	string[] Merged links
 	 */
 	public static function render_plugin_documentation_link( array $input, string $file ): array {

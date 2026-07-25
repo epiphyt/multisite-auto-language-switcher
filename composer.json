@@ -1,6 +1,11 @@
 {
     "scripts": {
-      "phpstan": "phpstan analyse -v --memory-limit=2048M"
+        "phpcs": "phpcs -s .",
+        "phpstan": "phpstan analyse -v --memory-limit=2048M",
+        "test": [
+            "@phpcs",
+            "@phpunit"
+        ]
     },
     "repositories": [
         {
@@ -14,11 +19,13 @@
         "phpstan/extension-installer": "^1.4",
         "swissspidy/phpstan-no-private": "^0.2.1",
         "phpstan/phpstan-deprecation-rules": "^1.2",
-        "epiphyt/multisite-language-switcher-stubs": "dev-main"
+        "epiphyt/multisite-language-switcher-stubs": "dev-main",
+        "epiphyt/coding-standard": "^1.0"
     },
     "config": {
         "allow-plugins": {
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     }
 }
