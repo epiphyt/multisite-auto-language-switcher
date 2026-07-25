@@ -4,7 +4,7 @@
         "phpstan": "phpstan analyse -v --memory-limit=2048M",
         "test": [
             "@phpcs",
-            "@phpunit"
+            "@phpstan"
         ]
     },
     "repositories": [
