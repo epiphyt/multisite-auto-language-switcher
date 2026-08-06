@@ -53,6 +53,7 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 == Changelog ==
 
 = 1.1.3 =
+* Added: Note for screen readers that the documentation link opens in a new tab
 * Fixed: Missing aria-current attribute for the current language in the language switcher
 * Fixed: Language switcher links no longer contain a redundant title attribute
 

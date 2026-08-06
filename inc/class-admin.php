@@ -34,7 +34,7 @@ final class Admin {
 			$input,
 			[
 				/* translators: plugin version */
-				'<a href="' . \esc_url( \sprintf( \__( 'https://docs.epiph.yt/multisite-auto-language-switcher/?version=%s', 'multisite-auto-language-switcher' ), \get_plugin_data( \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE )['Version'] ) ) . '" target="_blank" rel="noopener noreferrer">' . \esc_html__( 'Documentation', 'multisite-auto-language-switcher' ) . '</a>',
+				'<a href="' . \esc_url( \sprintf( \__( 'https://docs.epiph.yt/multisite-auto-language-switcher/?version=%s', 'multisite-auto-language-switcher' ), \get_plugin_data( \EPI_MULTISITE_AUTO_LANGUAGE_SWITCHER_FILE )['Version'] ) ) . '" target="_blank" rel="noopener noreferrer">' . \esc_html__( 'Documentation', 'multisite-auto-language-switcher' ) . '<span class="screen-reader-text"> ' . \esc_html__( '(opens in a new tab)', 'multisite-auto-language-switcher' ) . '</span></a>',
 			]
 		);
 	}
