@@ -184,6 +184,6 @@ final class Switcher {
 	public static function set_language_switcher_link( string $url, MslsLink $link, bool $is_current_blog ): string {
 		$url = self::add_redirected_parameter( $url );
 		
-		return \sprintf( '<a href="%1$s"%2$s>%3$s</a>', $url, $is_current_blog ? ' class="current_language" aria-current="page"' : '', $link );
+		return \sprintf( '<a href="%1$s"%2$s>%3$s</a>', \esc_url( $url ), $is_current_blog ? ' class="current_language" aria-current="page"' : '', $link );
 	}
 }

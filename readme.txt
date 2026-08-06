@@ -56,6 +56,7 @@ You can report security bugs through the Patchstack Vulnerability Disclosure Pro
 * Added: Note for screen readers that the documentation link opens in a new tab
 * Fixed: Missing aria-current attribute for the current language in the language switcher
 * Fixed: Language switcher links no longer contain a redundant title attribute
+* Fixed: Escaping of the language switcher link output
 
 = 1.1.2 =
 * Added: Compatibility with WordPress 7.0
