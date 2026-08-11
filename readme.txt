@@ -2,8 +2,8 @@
 Contributors: epiphyt, kittmedia
 Tags: multisite, switcher language, preferred, automatic
 Requires at least: 6.1
-Stable tag: 1.1.2
-Tested up to: 7.0
+Stable tag: 1.1.3
+Tested up to: 7.1
 Requires PHP: 7.4
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,9 +41,15 @@ Multisite Auto Language Switcher uses a cookie to prevent redirect loops between
 
 Logged-in users can define in their profile whether they want to disable being auto-redirected between languages.
 
+= Is Multisite Auto Language Switcher accessible? =
+
+Yes. During development, I test each feature against the Web Content Accessibility Guidelines (WCAG). You can find the [Accessibility Conformance Report](https://docs.epiph.yt/multisite-auto-language-switcher/acr.html) in the documentation.
+
+If you find an issue, please don't hesitate to contact me via the support forums or via my [contact page](https://epiph.yt/en/contact/).
+
 = Who are you, folks? =
 
-We are [Epiphyt](https://epiph.yt/en/), your friendly neighborhood WordPress plugin shop from southern Germany.
+[Epiphyt](https://epiph.yt/en/) is your friendly neighborhood WordPress plugin shop from southern Germany.
 
 = How can I report security bugs? =
 
